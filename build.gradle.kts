@@ -1,5 +1,8 @@
-repositories.mavenCentral()
+buildscript {
+    repositories.mavenCentral()
 
-plugins {
-    `kotlin-dsl`
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.kotlin}")
+    }
 }
+
