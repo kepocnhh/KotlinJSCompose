@@ -7,6 +7,8 @@ plugins {
     id("org.jetbrains.kotlin.multiplatform")
 }
 
+version = Version.app
+
 kotlin {
     js(IR) {
         browser()
